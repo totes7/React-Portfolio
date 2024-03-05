@@ -1,6 +1,5 @@
 .hero {
     height: 100vh;
-    color: var(--bg-color-text-dark);
     text-align: center;
     background-image: url(../../../images/bg-hero.jpg);
     background-position: center;
@@ -11,4 +10,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
+}
+
+.btn-links {
+    padding: 90px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.btn {
+    background-color: rgba(72, 61, 113, 0.5);
+    color: whitesmoke;
+    font-size: x-large !important;
+    text-align: center;
+    margin: 40px;
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background-color: rgba(72, 61, 113, 0.8);
+}
+
+.btn i {
+    font-size: 70px;
 }
