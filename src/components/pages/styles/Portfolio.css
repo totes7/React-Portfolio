@@ -19,3 +19,51 @@
 .card-wrapper {
     text-decoration: none;
 }
+
+.card-body {
+    background-color: #020c31;
+}
+
+.card:hover {
+    border: #c2c045 5px solid;
+}
+
+.projects-link {
+    margin-top: 75px !important;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.link-text {
+    padding: 20px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.link-button {
+    text-decoration: none;
+    display: block;
+    background-color: rgba(136, 136, 138, 0.2);
+    color: rgba(136, 136, 138, 0.0);
+    height: 150px;
+    width: 200px;
+    border-radius: 15px !important;
+    padding-top: 10px;
+    font-size: larger;
+    margin: 10px;
+}
+
+.link-button:hover {
+    background-color: rgba(136, 136, 138, 0.5);
+    border: #c2c045 2px solid;
+    color: #c2c045;
+}
+
+.link-button i {
+    color: #c2c045 !important;
+    font-size: 55px;
+    margin: 25px;
+}
