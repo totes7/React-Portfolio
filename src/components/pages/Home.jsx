@@ -1,29 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/Home.css";
 
 function Home() {
   return (
-    <div>
+    <>
       <div className="hero">
-        <div>
+        <div className="title">
           <h1 className="display-4">Antonio Manno</h1>
           <h2>Junior Full-Stack Web Developer</h2>
         </div>
-        <div className="btn-links">
-          <button type="button" className="btn btn-outline-secondary">
-            <i className="fa-solid fa-question"></i>
+        <div className="button-links">
+          <Link to="about" role="button" className="button">
+            <i className="fa-regular fa-user"></i>
             <br></br>
             About
-          </button>
-          <button type="button" className="btn btn-outline-secondary">
+          </Link>
+          <Link to="portfolio" role="button" className="button">
+            <i className="fa-regular fa-folder"></i>
+            <br></br>
             Portfolio
-          </button>
-          <button type="button" className="btn btn-outline-secondary">
+          </Link>
+          <Link to="contact" role="button" className="button">
+            <i className="fa-regular fa-envelope"></i>
+            <br></br>
             Contact
-          </button>
+          </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -1,0 +1,24 @@
+.about {
+    color: whitesmoke;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+.title-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 20px;
+}
+
+.text {
+    font-size: smaller;
+    border-left: solid 2px whitesmoke;
+}
+
+.text p {
+    padding: 20px 40px;
+}
