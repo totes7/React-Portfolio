@@ -1,0 +1,12 @@
+.contact {
+    color: whitesmoke;
+}
+
+.contact-title {
+    text-align: center;
+}
+
+.contact-title hr {
+    width: 50%;
+    margin: 30px auto;
+}
