@@ -22,7 +22,7 @@ function Portfolio() {
               className="col-lg-3 card-wrapper"
             >
               <PortfolioCard
-                image="./src/images/portfolio-1.jpg"
+                image="./public/images/portfolio-1.jpg"
                 title="Basketball Tournament"
                 text="Landing and registration pages made with html and css."
               />
@@ -34,7 +34,7 @@ function Portfolio() {
               className="col-lg-3 card-wrapper"
             >
               <PortfolioCard
-                image="./src/images/portfolio-2.jpg"
+                image="./public/images/portfolio-2.jpg"
                 title="FIFA WC Quiz"
                 text="Interactive website made with html, css and javascript."
               />
@@ -46,7 +46,7 @@ function Portfolio() {
               className="col-lg-3 card-wrapper"
             >
               <PortfolioCard
-                image="./src/images/portfolio-3.jpg"
+                image="./public/images/portfolio-3.jpg"
                 title="DineMate"
                 text="Restaurant website built with Django framework."
               />
@@ -58,7 +58,7 @@ function Portfolio() {
               className="col-lg-3 card-wrapper"
             >
               <PortfolioCard
-                image="./src/images/portfolio-4.jpg"
+                image="./public/images/portfolio-4.jpg"
                 title="Heritage Housing Study"
                 text="Data Analytics reserch with Jupyter in a Streamlit app."
               />
