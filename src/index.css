@@ -11,11 +11,11 @@
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
 }
 
 #root {
   font-family: "Roboto Mono";
-  height: 100%;
+  min-height: 100vh;
   background-color: #04001a;
 }
