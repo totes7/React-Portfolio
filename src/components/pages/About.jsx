@@ -10,7 +10,7 @@ function About() {
           <div className="col-lg-5 title-about">
             <h1 className="display-4">Antonio Manno</h1>
             <h4>Junior Full-Stack Web Developer</h4>
-            <Link to="portfolio" role="button" className="button">
+            <Link to="/portfolio" role="button" className="button">
               <i className="fa-regular fa-folder"></i>
               <br></br>
               Portfolio

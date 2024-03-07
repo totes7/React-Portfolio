@@ -1,0 +1,17 @@
+.portfolio {
+    color: whitesmoke;
+    font-size: smaller;
+}
+
+.title-portfolio {
+    text-align: center;
+}
+
+.title-portfolio hr {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.cards-section {
+    margin-top: 30px !important;
+}
