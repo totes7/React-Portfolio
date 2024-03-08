@@ -2,11 +2,45 @@
     color: whitesmoke;
 }
 
-.contact-title {
+.form {
+    padding: 20px;
+    border-right: solid 1px whitesmoke;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="email"], input[type="text"] {
+    
+    background-color : rgba(136, 136, 138, 0.6);
+    color: whitesmoke; 
+    width: 80%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    background-color : rgba(136, 136, 138, 0.6);
+    color: whitesmoke; 
+}
+
+#message-input {
+    background-color : rgba(136, 136, 138, 0.6);
+    color: whitesmoke;
+    width: 80%;
+}
+
+.contact-links {
+    padding: 20px;
     text-align: center;
 }
 
-.contact-title hr {
-    width: 50%;
-    margin: 30px auto;
+.btn-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
