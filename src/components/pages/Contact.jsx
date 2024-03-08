@@ -1,8 +1,41 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { send } from "emailjs-com";
 import "./styles/Contact.css";
 
 function Contact() {
+  const [toSend, setToSend] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    send("service_8brub0n", "sample1", toSend, "w3PTPQHEg7TjRVSxm")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+
+    setToSend({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+
+    alert("Message sent successfully!");
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+
   return (
     <>
       <div className="contact">
@@ -10,47 +43,63 @@ function Contact() {
           <div className="row">
             <div className="col-lg-6 form">
               <h2>Leave a message</h2>
-              <div class="mb-3">
-                <label for="name-input" class="form-label">
+              <form id="myForm" className="mb-3">
+                <label htmlFor="name-input" className="form-label">
                   Name
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  name="name"
+                  className="form-control"
                   id="name-input"
                   placeholder="Name"
+                  value={toSend.name}
+                  onChange={handleChange}
                 />
-                <label for="email-input" class="form-label">
+                <label htmlFor="email-input" className="form-label">
                   Email address
                 </label>
                 <input
                   type="email"
-                  class="form-control"
+                  name="email"
+                  className="form-control"
                   id="email-input"
                   placeholder="name@example.com"
+                  value={toSend.email}
+                  onChange={handleChange}
                 />
-                <label for="subject-input" class="form-label">
+                <label htmlFor="subject-input" className="form-label">
                   Subject
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  name="subject"
+                  className="form-control"
                   id="subject-input"
                   placeholder="Subject"
+                  value={toSend.subject}
+                  onChange={handleChange}
                 />
-              </div>
-              <div class="mb-3">
-                <label for="message-input" class="form-label">
+                <label htmlFor="message-input" className="form-label">
                   Message
                 </label>
                 <textarea
-                  class="form-control"
+                  name="message"
+                  className="form-control"
                   id="message-input"
                   rows="4"
                   placeholder="Leave a message"
+                  value={toSend.message}
+                  onChange={handleChange}
                 ></textarea>
-              </div>
-              <button className="btn btn-secondary">Send</button>
+              </form>
+              <button
+                onClick={handleSubmit}
+                type="submit"
+                className="btn btn-secondary"
+              >
+                Send
+              </button>
             </div>
             <div className="col-lg-6 contact-links">
               <h2>Contacts</h2>
@@ -61,7 +110,7 @@ function Contact() {
                   role="button"
                   className="link-button"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                   <br />
                   GuitHub
                 </Link>
@@ -71,7 +120,7 @@ function Contact() {
                   role="button"
                   className="link-button"
                 >
-                  <i class="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-linkedin"></i>
                   <br />
                   LinkedIn
                 </Link>
@@ -82,7 +131,7 @@ function Contact() {
                   role="button"
                   className="link-button"
                 >
-                  <i class="fa-solid fa-envelope"></i>
+                  <i className="fa-solid fa-envelope"></i>
                   <br />
                   Gmail
                 </Link>
