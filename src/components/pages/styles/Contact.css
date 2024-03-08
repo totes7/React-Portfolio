@@ -4,7 +4,6 @@
 
 .form {
     padding: 20px;
-    border-right: solid 1px whitesmoke;
 }
 
 .form h2 {
@@ -16,7 +15,6 @@ input[type="email"], input[type="text"] {
     
     background-color : rgba(136, 136, 138, 0.6);
     color: whitesmoke; 
-    width: 80%;
 }
 
 input[type="text"]:focus, input[type="email"]:focus {
@@ -27,7 +25,6 @@ input[type="text"]:focus, input[type="email"]:focus {
 #message-input {
     background-color : rgba(136, 136, 138, 0.6);
     color: whitesmoke;
-    width: 80%;
 }
 
 .contact-links {
