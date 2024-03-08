@@ -10,7 +10,7 @@ function About() {
         <div className="row">
           <div className="col-lg-5 title-about">
             <h1 className="display-4">Antonio Manno</h1>
-            <h4>Junior Full-Stack Web Developer</h4>
+            <h5>Junior Full-Stack Web Developer</h5>
             <hr />
             <a
               href={CvPdf}

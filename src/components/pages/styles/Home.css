@@ -11,18 +11,18 @@
 }
 
 .title-home {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
-.button-links {
-    padding: 90px 0;
+.col-sm-12 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 
 .button {
+    display: block;
     text-decoration: none;
     background-color: rgba(136, 136, 138, 0.2);
     color: rgba(136, 136, 138, 0.0);
