@@ -82,7 +82,7 @@ function Contact() {
                   role="button"
                   className="link-button"
                 >
-                  <i class="fa-brands fa-google"></i>
+                  <i class="fa-solid fa-envelope"></i>
                   <br />
                   Gmail
                 </Link>
