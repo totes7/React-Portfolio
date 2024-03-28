@@ -17,14 +17,14 @@ function Portfolio() {
           <div className="row cards-section">
             <Link
               target="_blank"
-              to="https://totes7.github.io/project-portfolio-one/"
+              to="https://pouch-finance-tracker.netlify.app/"
               role="button"
               className="col-lg-3 card-wrapper"
             >
               <PortfolioCard
                 image="https://github.com/totes7/React-Portfolio/blob/main/src/images/portfolio-1.jpg?raw=true"
-                title="Basketball Tournament"
-                text="Landing and registration pages made with html and css."
+                title="Pouch Finance Tracker"
+                text="Finance tracking app made with React."
               />
             </Link>
             <Link

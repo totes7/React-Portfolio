@@ -11,9 +11,6 @@ function PortfolioCard(props) {
           <p class="card-text">
             {props.text}
           </p>
-          <p class="card-text">
-            <small>Last updated 3 mins ago</small>
-          </p>
         </div>
       </div>
     </>
